@@ -18,7 +18,7 @@ void mostra_conjuntos(Conjuntos *p, void (*mostra)(void *)){
 	
 	Lista * l;
 	
-	for (i = 0; i < p->multi->qtd; i++) {
+	/*for (i = 0; i < p->multi->qtd; i++) {
         leNaPos(&p->multi, &l, i);
         mostra_lista(l, void (*mostra) (void *))
         //for (j = 0; j < p->multi->cabeca->proximo->info ; j++) {
@@ -26,15 +26,15 @@ void mostra_conjuntos(Conjuntos *p, void (*mostra)(void *)){
             //mostra(x);
         //}
         printf("\n");
-    }	
+    }*/	
 }  
 
-void desaloca_conj(&c){
+/*void desaloca_conj(&c){
 	for (i = 0; i < lin; i++) {
         leNaPos(&m, &sub, i);
         limpa_lista(&sub);
     }
     limpa_lista(&m);
-}
+}*/
 
 
