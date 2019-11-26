@@ -135,7 +135,8 @@ int modificaNaPos(Lista *l, void *info, int pos) {
 }
 
 int leNaPos(Lista *l, void *info, int pos) {
-    if (lista_vazia(l))
+	
+   if (lista_vazia(l))
         return ERROLISTA_VAZIA;
     if (pos < 0 || pos >= l->qtd)
         return ERRO_POS_INVALIDA;
@@ -157,15 +158,29 @@ int insereNaOrdem(Lista *l, void *info, int (*comp) (void *, void *)) {
     return insereNaPos(l, info, cont);
 }
 
+int posicaoDoElemento(Lista *l, void *info, int (*comp) (void *, void *)) {
+	int cont = 0;
+    Elemento *p = l->cabeca;
+    while (p != NULL) {
+    	if(comp(p->info, info) == 0) {
+    		return cont;
+		}
+		cont++;
+		p = p->proximo;
+    	
+    }
+    return -1 ; 
+}
+
 void mostra_lista(Lista l, void (*mostra) (void *)) {
     if (lista_vazia(&l))
         printf("\nLista vazia!\n");
     else {
-        printf("\nDados da lista:\n");
+        
         Elemento *p = l.cabeca;
         int count =0;
-        while (p) {
-            printf("%d\t", count);
+        while (p!= NULL) {
+            printf("rep.(%d)\t ", count +1);
             mostra(p->info);
             p = p->proximo;
             count++;
