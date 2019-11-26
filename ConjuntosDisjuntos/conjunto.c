@@ -101,8 +101,9 @@ void mostra_conjuntos(Conjuntos c , void (*mostra)(void *)){
 	Lista sub;
 	for ( i = 0 ; i<c.multi.qtd;i++){
 		leNaPos(&c.multi,&sub,i);
-		printf("\nconjunto [%d]\n",i);
+		printf("\nconjunto [%d] = { ",i);
 		mostra_lista(sub, mostra);
+		printf("}");
 	}
 }  
 

@@ -14,16 +14,26 @@ int main() {
 	float x, y, z=0, w=4, t=5;
 	int ind;
 	void *aux;
-	do{	
+	do{			
 		system("cls");
-		printf("Escolha uma das opcoes abaixo:\n\n");
-		printf("(1)Inserir um conjunto na Lista; \n");
-		printf("(2)Ver lista; \n");
-		printf("(3)Buscar indice de um conjunto na lista;\n");
-		printf("(4)Unir conjunto; \n");
-		printf("(5)Remover Conjunto; \n");
-		printf("(6)Zera lista de conjuntos; \n");
-		printf("(7)Sair; \n");
+	    system("color 0a");
+    	printf("\n\t\t\t\xC9\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xBB");
+		printf("\n\t\t\t\xBA        C O N J U N T O S       \xBA");
+		printf("\n\t\t\t\xC8\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xBC");
+		printf("\n");
+		printf("\n");
+		printf("\n");
+		printf("\n\t\t\tEscolha uma das opcoes abaixo:\n\n");
+		printf("\n\t\t\t(1)Inserir um conjunto na Lista; \n");
+		printf("\n\t\t\t(2)Ver lista; \n");
+		printf("\n\t\t\t(3)Buscar indice de um conjunto na lista;\n");
+		printf("\n\t\t\t(4)Unir conjunto; \n");
+		printf("\n\t\t\t(5)Remover Conjunto; \n");
+		printf("\n\t\t\t(6)Zera lista de conjuntos; \n");
+		printf("\n\t\t\t(7)Sair; \n");
+		printf("\n");
+		printf("\n");
+		printf("\n");
 		
 		scanf("%d",&ind);
 		
@@ -112,7 +122,7 @@ int main() {
 }
 
 void mostra(void *x) {
-    printf("%f\n", *(float*) x);
+    printf("%.2f ;", *(float*) x);
 } 
 
 int compara(void *x, void *y) {

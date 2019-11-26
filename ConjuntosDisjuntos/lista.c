@@ -180,7 +180,7 @@ void mostra_lista(Lista l, void (*mostra) (void *)) {
         Elemento *p = l.cabeca;
         int count =0;
         while (p!= NULL) {
-            printf("rep.(%d)\t ", count +1);
+            //printf("rep.(%d)\t ", count +1);
             mostra(p->info);
             p = p->proximo;
             count++;
